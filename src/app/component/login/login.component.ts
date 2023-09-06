@@ -19,8 +19,11 @@ export class LoginComponent {
   saveUser(){
     this.userService.setUser(this.user);
     alert('User: '+this.user+' saved successfully');
-    this.user = '';
   }
 
+  cleanUser(){
+    this.userService.cleanUser();
+    alert('User: clean successfully');
+  }
 
 }
